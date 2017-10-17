@@ -1,0 +1,69 @@
+/* INDEX PAGE////////////////////////////////////////////////////////////////////*/
+
+
+img {
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+}
+
+a {
+    font-family: 'Fredoka One';
+    background: #fff;
+    color: #B11F24;
+    font-size: 8vw;
+    border-radius: 3vw;
+    padding: 2vw;
+    text-decoration: none;
+}
+
+.button {
+    margin-top: -33vw;
+    margin-left: 36vw;
+    position: absolute;
+}
+
+.button :hover {
+    background: #d9b3d4;
+    color: #B11F24;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////// MAIN SCENE/////////////////////////////////////////////////////////*/
+
+
+
+#mainScene {
+    background-image: url(../img/restaurant.svg);
+    background-repeat: no-repeat;
+    background-size: 1000px;
+
+}
+
+
+/* THE WALKING RICE FIELD WORKER WHO IS VERY OFFENSIVE TO CHINESE CULTURE AND WAS DONE BY RADOVAN VESELY
+.man {
+    width: 120px;
+    height: 150px;
+    background-image: url(Artboard%2013@4x-8.png);
+    background-size: 600px;
+    animation: walk 1s infinite steps(5);
+
+}
+
+@keyframes walk {
+    to {
+        background-position: -600px 0;
+    }
+}
+
+.motion {
+    animation: walking 25s linear infinite;
+}
+
+@keyframes walking {
+    to {
+        transform: translateX(1200px)
+    }
+}
+*/
