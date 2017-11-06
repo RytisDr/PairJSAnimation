@@ -1,6 +1,9 @@
 /* INDEX PAGE////////////////////////////////////////////////////////////////////*/
 
-
+.intro {
+    background: #B11F24;
+    margin: 0;
+}
 img {
     width: 100vw;
     position: relative;
@@ -31,39 +34,219 @@ a {
 /*//////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////// MAIN SCENE/////////////////////////////////////////////////////////*/
 
-
+/*BACKGROUND/////////////////////////////*/
 
 #mainScene {
     background-image: url(../img/restaurant.svg);
     background-repeat: no-repeat;
     background-size: 1000px;
-
+    width: 100%;
+    background-color: #B11F24;
+}
+.sweatChef{
+    background-image: url(../img/chef-sweating-background.svg);
+    background-repeat: no-repeat;
+    background-size: 1000px;
+    width: 100%;
+    background-color: #B11F24;
 }
 
 
-/* THE WALKING RICE FIELD WORKER WHO IS VERY OFFENSIVE TO CHINESE CULTURE AND WAS DONE BY RADOVAN VESELY
-.man {
-    width: 120px;
-    height: 150px;
-    background-image: url(Artboard%2013@4x-8.png);
-    background-size: 600px;
+/* CHARACTERS/////////////////////////*/
+.riceman {
+    width: 300px;
+    height: 400px;
+    background-image: url(../img/sushi%20time_sprite%20sheet.png);
+    background-size: 1500px;
     animation: walk 1s infinite steps(5);
+    margin-top: 382px;
+    margin-left: -500px;
+}
+.ricemanFront{
+    width: 300px;
+    height: 440px;
+    position: absolute;
+    left: 320px;
+    top: 340px;
+    display: none;
+}
 
+.girl {
+    width: 300px;
+    height: 400px;
+    background-image: url(../img/Artboard%2013@4x-8.png);
+    background-size: 1500px;
+    animation: walk 1s infinite steps(5);
+    margin-top: 355px;
+    margin-left: -500px;
+}
+.girlStanding {
+    width: 300px;
+    height: 440px;
+    position: absolute;
+    left: 320px;
+    top: 370px;
+    display: none;
+}
+.girlCrying{
+    width: 300px;
+    height: 440px;
+    position: absolute;
+    left: 315px;
+    top: 370px;
+    display: none;
+}
+.girlwalkingback {
+    width: 300px;
+    height: 400px;
+    background-image: url(../img/crying_walking_back.png);
+    background-size: 1500px;
+    animation: walk 1s infinite steps(5) reverse;
+    margin-top: 340px;
+    left: 318px;
+    position: absolute;
+    display: none;
+}
+.monster {
+    width: 300px;
+    margin-top: -120px;
+    margin-left: 150px;
+    animation: flying 1s infinite ease-in-out alternate;
+    display: none;
+    }
+
+
+/* WALKING MOVEMENT/////////////////////////////////////////////////////*/
+.walkOutLeft {
+    animation: walkLeft 7s linear forwards;
+}
+.walkfromleft {
+    transition: transform 7s linear;
+    transform: translateX(800px);
+}
+
+.walkRight {
+    animation: walkRight 7s linear forwards;
+}
+/* ANIMATION KEYFRAMES//////////////////////////////////////////////////////*/
+
+@keyframes walkRight {
+    from{
+        transform: translateX(800px);
+    }
+    80%{
+        opacity: 1;
+    }
+    90%{
+        opacity:0;
+    }
+    100%{
+        transform: translateX(1400px);
+        opacity:0;
+    }
+}
+@keyframes walkLeft {
+    to {
+        transform: translateX(-700px);
+    }
+}
+@keyframes flying {
+    to {
+        transform: translateY(17px);
+    }
 }
 
 @keyframes walk {
     to {
-        background-position: -600px 0;
+        background-position: 1500px;
+    }
+}
+@keyframes opacity{
+    from{
+        opacity: 0;
     }
 }
 
-.motion {
-    animation: walking 25s linear infinite;
-}
 
-@keyframes walking {
-    to {
-        transform: translateX(1200px)
-    }
+/* THE MENU OUTLINE THAT APPEARS AND THE CROSSES/////////////////////////////////*/
+
+.pressSomething{
+    margin-left: 564px;
+    margin-top: 20px;
+    width: 410px;
+    height: 200px;
+    background-color: transparent;
+    border-color: yellow;
+    border-width: 20px;
+    animation: opacity 1s alternate infinite;
+    display: none;
+    cursor: pointer;
 }
-*/
+.crosses{
+    width: 450px;
+    height: 200px;
+    margin-left: 544px;
+    margin-top: 20px;
+    animation: opacity 0.5s alternate infinite;
+    display: none;
+
+}
+/* CREDITS PAGE////////////////////////////////////////////////////////////////////*/
+.linkstoryboard a{
+ font-family: 'Fredoka One';
+ background: #fff;
+ color: #B11F24;
+ font-size: 3vw;
+ border-radius: 3vw;
+ padding: 2vw;
+ text-decoration: none;
+ position: absolute;
+ margin-top: -20vw;
+ margin-left: 55vw;
+}
+.linkdiagram a{
+ font-family: 'Fredoka One';
+ background: #fff;
+ color: #B11F24;
+ font-size: 3vw;
+ border-radius: 3vw;
+ padding: 2vw;
+ text-decoration: none;
+ position: absolute;
+ margin-top: -10vw;
+ margin-left: 55vw;
+
+}
+.linkagain a{
+ font-family: 'Fredoka One';
+ background: #FBA923;
+ color: #B11F24;;
+ font-size: 4vw;
+ border-radius: 6vw;
+ padding: 3vw;
+ text-decoration: none;
+ position: absolute;
+ margin-top: -20vw;
+ margin-left: 20vw;
+
+}
+.linkdiagram :hover {
+ background: #d9b3d4;
+ color: #B11F24;
+}
+.linkstoryboard :hover {
+ background: #d9b3d4;
+ color: #B11F24;
+}
+.linkagain :hover {
+ background: #d9b3d4;
+ color: #B11F24;
+}
+/*//////////// DISPLAY/DONT DISPLAY/////////KEEP THESE AT THE BOTTOM/////////////////////////////*/
+
+.dontDisplay{
+    display: none;
+}
+.display{
+    display: inline;
+}
