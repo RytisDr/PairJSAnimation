@@ -1,11 +1,15 @@
 /* INDEX PAGE////////////////////////////////////////////////////////////////////*/
 
+
 .intro {
     background: #B11F24;
     margin: 0;
 }
-img {
-    width: 100vw;
+#introImg {
+    height: 100vh;
+    max-height: 1455px;
+    display: block;
+    margin: auto;
     position: relative;
     overflow: hidden;
 }
@@ -21,9 +25,14 @@ a {
 }
 
 .button {
-    margin-top: -33vw;
-    margin-left: 36vw;
+
     position: absolute;
+    width: 570px;
+    top: 750px;
+    left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .button :hover {
